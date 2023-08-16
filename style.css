@@ -1,0 +1,222 @@
+/* Cabeçalho e links do cabeçalho */
+
+#cabecalho{
+    background: linear-gradient(to left, #D84E1F,rgb(255, 192, 97),rgb(244, 115, 32));
+    border-radius:10px;
+    height: auto;
+    padding-top:3%;
+    border-width: 3px;
+    border-color:black;
+    border-style:outset;
+}
+
+body{
+    background-color:rgb(97, 97, 97);
+}
+
+.links{
+    background: white;
+    font-size: 104.5%;
+    margin: 10px;
+    color: black;
+    justify-content: space-around;
+    position: relative;
+    text-decoration: none;
+}
+
+.links a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.links a:hover{
+    color:#D84E1F;
+    transition: all 0.3s ease;
+    font-size: 110%;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.imagem{
+    background-color:rgb(78, 78, 78);
+    padding:1%;
+}
+
+/* --- Conteudos --- */
+
+#faixa {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.cor{
+    background: linear-gradient(to left,white,#D84E1F,rgb(255, 192, 97),rgb(244, 115, 32),white);
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom:2%;
+    border-radius: 10px;
+}
+.titulo {
+    font-size: 30px;
+    text-indent: 20px;
+    width: 100%;
+    text-align: justify;
+    justify-items: center;
+
+}
+p {
+    text-indent: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 20px;
+    padding:5%;
+    padding-top: 0%;
+    padding-bottom:0%;
+}
+
+.max-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.max-image img {
+    max-height: 100%; 
+    max-width: 100%; 
+    object-fit: contain; 
+}
+
+.max-image section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+
+.max-image section img {
+    max-width: 100%;
+    height: auto;
+}
+.download-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .download-button a:hover {
+    background-color: #2980b9;
+ 
+}
+/* Links */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background: rgb(244, 115, 32);
+    justify-content: center;
+    font-family: cursive;
+    font-style: oblique;
+    border-radius: 10px;
+    
+}
+.creditos {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1%;
+    color: #999;
+}
+  
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #D84E1F;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+.social-links i {
+    font-size: 18px;
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+}
+form {
+    width: 400px;
+    margin-top: 20px;
+}
+.caixa-texto {
+    width: 190px;
+    padding: 6px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 30px;
+    background-color: transparent;
+    margin:10px;
+}
+@media screen and (max-width: 768px) {
+    .max-image {
+        max-height: 200px; 
+    }
+}
